@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/myorder.css">
+    <script src="./js/rem.js"></script>
+    <title>历史订单</title>
+</head>
+
+<body>
+    <div class="wide">
+        <!-- 头部进行中 -->
+        <!-- <div class="title">
+            <img src="img/icon_back_na3x.png" class="icon_left"  onClick="javascript :history.back(-1);">
+            <span>历史订单</span> -->
+        <!-- <text id="ing" class="active">进行中</text>
+            <text id="finish" class="noactive">已完成</text> -->
+        <!-- </div> -->
+        <!-- 头部进行中 -->
+        <!-- 下面的内容 -->
+        <div class="content" id="jingxingzhong">
+            <div class="content-list">
+                <div class="pading4">
+                    <div class="content-title">
+                        <p class="title1">省心投</p>
+                        <p class="title2 f24">12个月</p>
+                    </div>
+                    <div class="middle">
+                        <div class="pre">
+                            <p class="precount f36bold">1000元</p>
+                            <p class="f24 margintop">投资金额</p>
+                        </div>
+                        <div class="next">
+                            <p class="nextcount f36bold">800元</p>
+                            <p class="nextbott margintop">最终收益</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="flex">
+                        <div class="qi">
+                            <p class="f20">起投时间</p>
+                            <p class="f20">2018-06-01</p>
+                        </div>
+                        <div class="line"><img src="img/linex.png" alt=""></div>
+                        <div class="end">
+                            <p class="f20">结束时间</p>
+                            <p class="f20">2018-06-02</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list">
+                <div class="pading4">
+                    <div class="content-title">
+                        <p class="title1">全家福保险</p>
+                    </div>
+                    <div class="middle">
+                        <div class="pre">
+                            <p class="precount f36bold">1000元</p>
+                            <p class="f24 margintop">投资金额</p>
+                        </div>
+                        <div class="next">
+                            <p class="nextcount f36bold">800元</p>
+                            <p class="nextbott margintop">获保金额</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <p class="f20">投保时间</p>
+                        <p class="f20 ">2018-06-01</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content-list">
+                <div class="pading4">
+                    <div class="content-title">
+                        <p class="title1">全家福保险</p>
+                    </div>
+                    <div class="middle">
+                        <div class="pre">
+                            <p class="precount f36bold">1000元</p>
+                            <p class="f24 margintop">投资金额</p>
+                        </div>
+                        <div class="next">
+                            <p class="nextcount f36bold">800元</p>
+                            <p class="nextbott margintop">最终收益</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <p class="f20">投保时间</p>
+                        <p class="f20 ">2018-06-01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 下面的内容 -->
+        <!-- 已完成内容 -->
+        <div class="allfinish" id="allfinish" style="display:none;">
+            <div class="content-list">
+                <div class="pading4">
+                    <div class="content-title">
+                        <p class="title1">全家福保险</p>
+                    </div>
+                    <div class="middle">
+                        <div class="pre">
+                            <p class="precount f36bold">1000元</p>
+                            <p class="f24 margintop">投资金额</p>
+                        </div>
+                        <div class="next">
+                            <p class="nextcount f36bold">800元</p>
+                            <p class="nextbott margintop">最终收益</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div>
+                        <p class="f20">投保时间</p>
+                        <p class="f20 ">2018-06-01</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 已完成内容 -->
+    </div>
+    <!-- 底部导航 -->
+    <footer class="aui-nav" id="footer" style="border-top: 1px solid #dbdbdb;z-index:9">
+        <ul class="bar-tab" id="parent">
+            <li>
+                <a href="index.html"><img src="./img/home.png" class="foot_icon" />
+                    <p class="f24grey">
+                        首页
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a href="service.html"><img src="./img/service.png" class="foot_icon" />
+                    <p class="f24grey">
+                        服务
+                    </p>
+                </a>
+            </li>
+            <li>
+                <a onclick="javascript:history.go(-1)"><img src="./img/profile_selected.png" class="foot_icon" />
+                    <p class="f24">
+                        我的
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    <!-- 底部导航 -->
+    <script src="./js/jquery-2.1.4.js"></script>
+
+    <script src="js/common.js"></script>
+    <script src="js/myorder.js"></script>
+    <script>
+        var ingtab = $('#ing');
+        var finishtab = $('#finish');
+        var view1 = $('#jingxingzhong');
+        var view2 = $('#allfinish');
+        ingtab.on('click', function () {
+            ingtab.addClass('active')
+            finishtab.removeClass('active')
+            view2.hide();
+            view1.show();
+        })
+        finishtab.on('click', function () {
+            ingtab.removeClass('active')
+            finishtab.addClass('active')
+            view2.show();
+            view1.hide();
+        })
+    </script>
+</body>
+
+</html>

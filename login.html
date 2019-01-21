@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/rem.js"></script>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <div class="container">
+        <img src="img/logo_Groupx.png" alt="" class="logo1">
+        <!-- <form  action="#" method="get" > -->
+        <form action="index.html" method="get">
+            <div class="form_li">
+                <!-- <span class="icon icon_s"> </span> -->
+                <img src="img/iconsx.png" alt="" class="icon">
+                <input type="number" placeholder="请输入手机号" maxlength="11" name='phone' id="phone" value=''>
+            </div>
+            <div class="form_li">
+                <!-- <span class="icon icon_code"></span> -->
+                <img src="img/icon_codex.png" alt="" class="icon">
+                <input type="number" placeholder="请输入验证码" id="code" value='' name='code'>
+                <div class="code_btn">获取验证码</div>
+            </div>
+            <input type="submit" name="" id="submit" value="登录">
+            <p class="f12">未注册用户验证后自动登录</p>
+        </form>
+    </div>
+    <!-- window -->
+    <div class="window"></div>
+    <!-- window end -->
+</body>
+<script src="js/login.js"></script>
+
+</html>

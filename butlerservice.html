@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/bulterservice.css">
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="./js/rem.js"></script>
+    <title>管家服务</title>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <img src="img/icon_back_na3x.png" class="icon_left" >
+        <span>管家服务</span>
+    </div>
+    <div class="wide">
+        <div class="title">
+          <img src="img/icon_service.png" alt="">
+        </div>
+        <div class="formlist">
+            <div class="list">
+                <img src="img/iconsx.png" alt="">
+                <input type="number" id="phone" placeholder="请输入手机号" disabled>  
+            </div>
+            <!-- <div class="list">
+                <img src="./img/idcard.png" alt="">
+                <input type="text" placeholder="身份证号" id="identity">
+            </div> -->
+            <div class="list">
+                <img src="img/icon_name.png" alt="">
+                <input type="text" placeholder="称呼" id="name">
+            </div>
+            <div class="sex">
+                <div class="boy selected" data-sex='1'>
+                    <img src="img/icon_male_selecte3x.png" alt="">
+                    <img src="img/icon_male_normalx.png" class="hide" alt="">
+                    <span>男</span>
+                </div>
+                <div class="girl" data-sex='2'>
+                    <img src="img/icon_female_normalx.png" alt="">
+                    <img src="img/icon_female_selectedx.png" class="hide" alt="">
+                    <span>女</span>
+                </div>
+            </div>
+            <div class="yixaing">
+                <p class="f24">* 意向服务（可多选）：</p>
+                <div class="option f24">
+                    <!-- <p class="p pactive">投资理财</p>
+                    <p class="p">保险配置</p>
+                    <p class="p">子女教育</p>
+                    <p class="p">海外置业</p> -->
+                </div>
+            </div>
+            <!-- <div class="agree f24">
+                <span class="icon icon_checked"></span>
+                我已仔细阅读<a href="javascript:;">《新富会》服务</a>所有内容
+            </div> -->
+            <div class="submit">
+                提交信息
+            </div>
+        </div>
+    </div>
+    <!-- window -->
+    <div class="window"></div>
+    <div class="window_w">
+        <div class="info">
+            <p class="txt">放弃召唤管家服务吗？</p>
+            <div class="op">
+                <div class="cancel">取消</div>
+                <div class="give_up">放弃</div>
+            </div>
+        </div>
+    </div>
+    <!-- window end -->
+</body>
+<script src="js/butlerservice.js"></script>
+</html>

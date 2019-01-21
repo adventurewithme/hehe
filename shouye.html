@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/shouye.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <script src="./js/jquery-2.1.4.js"></script>
+    <script src="./js/rem.js"></script>
+    <title>首页</title>
+</head>
+<body>
+    <div class="wide">
+        <!-- banner部分 -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./img/banner1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./img/banner1.png" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination" ></div>
+        </div>
+        <!-- banner部分 -->
+        <!-- banner下方四个分类 -->
+        <div class="padd">
+            <div class="classify">
+                <div>
+                    <img src="./img/invest.png" alt="">
+                    <p class="f24">投资管理</p>
+                </div>
+                <div>
+                    <img src="./img/insurance.png" alt="">
+                    <p class="f24">保险配置</p>
+                </div>
+                <div>
+                    <img src="./img/education.png" alt="">
+                    <p class="f24">子女教育</p>
+                </div>
+                <div>
+                    <img src="./img/house.png" alt="">
+                    <p class="f24">海外置业</p>
+                </div>
+            </div>
+        </div>
+        <!-- banner下方四个分类 -->
+        <!-- 案例介绍 -->
+        <div class="case">
+            <div class="title f36">
+                <img src="img/text3x.png" alt="" class="you h36">
+            </div>
+            <div class="bannerimg">
+                <div class="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/touzilicai.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/baoxianpeizhi.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/zinvjiaoyu.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/haiwaizhiye.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 案例介绍 -->
+        <!-- 优势 -->
+        <div class="advantage">
+            <div class="title1"> 
+                <img src="img/textx.png" alt="" class="you">
+                <!-- <text class="kuohao f36">（</text>
+                <text class="f36">优势</text>
+                <text class="kuohao f36">）</text> -->
+            </div>
+            <div class="advantage-con">
+                <div class="con-list  mb line1">
+                    <img src="./img/invest.png" alt="">
+                    <p class="f24grey">优质资产，严格把控，完善担保，更尊贵的你，该享受更特别的待遇。</p>
+                </div>
+                <div class="con-list mb line2">
+                    <img src="./img/insurance.png" alt="">
+                    <p class="f24grey">独特的保险排雷服务，为每个家庭成员甄选最适合的保险。</p>
+                </div>
+                <div class="con-list line3">
+                    <img src="./img/education.png" alt="">
+                    <p class="f24grey">原汁原味全球学习文化交流，尽早开启精英成长模式，让孩子从小见识不凡。</p>
+                </div>
+                <div class="con-list line4">
+                    <img src="./img/house.png" alt="">
+                    <p class="f24grey">稀缺自然资源，投资自住两相宜，无忧托管，助力资产保值增值。</p>
+                </div>
+                <!-- 立即加入 -->
+                <div class="join">
+                        <img src="./img/立即加入@2x.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <!-- 优势 -->
+        <!-- 底线 -->
+        <div class="dixian">我是有底线的</div>
+        <!-- 底部导航 -->
+        <footer class="aui-nav" id="footer" style="border-top: 1px solid #dbdbdb;z-index:9">
+                <ul class="bar-tab" id="parent">
+                    <li >
+                        <img src="./img/home_selected.png" class="foot_icon"/>
+                        <p class="f24">
+                            首页
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./img/service.png" class="foot_icon"/>
+                        <p class="f24grey">
+                            服务
+                        </p>
+                    </li>
+                    <li style="display:none">
+                        <img src="./img/profile.png" class="foot_icon" />
+                        <p class="f24grey">
+                            我的
+                        </p>
+                    </li>
+                </ul>
+            </footer>
+        <!-- 底部导航 -->
+    </div>
+    <script src="./js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/shouye.js"></script>
+    <script type="text/javascript">
+    // 首页banner图轮播
+    var mySwiper = new Swiper('.swiper-container',{
+        loop:true, //循环播放
+        // 设置分页
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        // 自动播放
+        autoplay:true,
+    })
+    // 案例介绍
+    var mySwiper = new Swiper('.swiper-container1',{
+        spaceBetween: 20,
+        slidesPerView: 'auto',
+    })
+        // var listfont=document.getElementById("parent").getElementsByTagName("p");
+        // var listimg=document.getElementById("parent").getElementsByTagName("img");
+        // var listli=document.getElementById("parent").children;
+        
+        // for(var i=0;i<listli.length;i++)
+        // {
+        //     listli[i].index=i;
+        //     listli[i].onclick=function(i)
+        //     {
+        //         initimg();//初始化img
+        //         initfont(listli.length);//初始化font
+        //         switchImg(this.index);//改变图片
+        //         listfont[this.index].className="f24";//改变font
+        //         panduan(this.index);
+        //     };
+        // };
+        
+        // function initimg(){
+        //     listimg[0].setAttribute("src","./img/home.png");
+        //     listimg[1].setAttribute("src","./img/service.png");
+        //     listimg[2].setAttribute("src","./img/profile.png");
+        // }
+        
+        // function initfont(index) {
+        //     for(var i=0;i<index;i++)
+        //     {
+        //         listfont[i].className="f24grey";
+        //     }    
+        // }
+        
+        // function switchImg(index){
+        //     switch(index){
+        //         case 0:
+        //              listimg[0].setAttribute("src","./img/home_selected.png");
+        //          break;
+        //          case 1:
+        //              listimg[1].setAttribute("src","./img/service_selected.png");
+        //          break;
+        //          case 2:
+        //              listimg[2].setAttribute("src","./img/profile_selected.png");
+        //          break;
+        //     }
+        // }
+        // function panduan(index){
+        //     switch(index){
+        //         case 0:
+        //             $("#tbodyCenter").load("../first/first.html");
+        //         break;
+        //         case 1:
+                    
+        //         break;
+        //         case 2:
+        //             $("#tbodyCenter").load("../fourth/my.html");
+        //         break;
+        //     }
+        // }
+        </script>
+</body>
+</html>
