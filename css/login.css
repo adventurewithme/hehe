@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #F6F5F8;
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    /* height: 12.7rem; */
+    background:#29243D url(../img/bg_loginx.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 0 .66rem;
+    box-sizing: border-box;
+}
+.container .logo1{
+    width: 5.12rem;
+    height: 1.48rem;
+    margin: .96rem auto 0;
+}
+.icon{
+    width: .4rem;
+    height: .4rem;
+    display: inline-block;
+    flex-shrink: 0;
+    -webkit-flex-shrink:0;
+}
+.icon_s{
+    background: url(../img/iconsx.png) no-repeat;
+    background-size: 100% 100%;
+}
+.icon_code{
+    background: url(../img/icon_codex.png) no-repeat;
+    background-size: 100% 100%;
+}
+.form_li{
+    width: 100%;
+    border-bottom: 1px solid #928E9F;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-algin-items:center;
+    line-height: .88rem;
+    margin-top: .6rem;
+}
+form{
+    margin: 1.4rem 0 0 0;
+}
+input{
+    height: .88rem;
+    line-height: .88rem;
+    background: transparent;
+    border: none;
+    text-indent: .24rem;
+    font-size: .36rem;
+    color: #fff;
+    -webkit-appearance: none; 
+}
+.form_li #phone,
+.form_li #code{
+    flex: 1;
+    -webkit-flex:1;
+}
+.form_li #code{
+    max-width: 4rem;
+}
+.form_li .code_btn{
+    font-size: .32rem;
+    color: #fff;
+    flex-shrink: 0;
+    -webkit-flex-shrink:0;
+    position: absolute;
+    right: .66rem;
+}
+ #submit{
+    width: 5.2rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #F8D66A;
+    color: #000;
+    margin-top: 1.7rem;
+}
+.f12{
+    color: #9490A2;
+    font-size: .24rem;
+    line-height: .72rem;
+}

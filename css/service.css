@@ -1,0 +1,337 @@
+@font-face{
+    font-family:"farrigon";
+    src:url(../font/Farrington-7B-Qiqi.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    background: #F6F5F8;
+}
+/* common */
+.icon{
+    width: .4rem;
+    height: .4rem;
+    display: inline-block;
+    float: left;
+    margin-right: .12rem;
+}
+.b_600{
+    font-weight: 600;
+}
+.top_10{
+    margin-top: .2rem;
+}
+#personal,
+#bao,
+#child,
+#sea{
+    padding: 0 .4rem;
+    box-sizing: border-box;
+}
+/* banner */
+.banner{
+    width: 100vw;
+    background-color: #29243D;
+    padding: 1.4rem .4rem 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.banner_g{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: #000;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+.logo{
+    height: 1.12rem;
+    display: block;
+    position: fixed;
+    z-index: 100;
+    background: #29243D;
+    top:0;
+}
+.logo img{
+    width: 6.7rem;
+    height: .6rem;
+    display: block;
+    margin: .26rem .4rem;
+}
+.banner .banner_bg{
+    width: 6.7rem;
+    height: 2.8rem;
+    background: url(../img/bg_member_cardx.png) no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    line-height: 2.4rem;
+}
+.banner_info{
+    font-size: .44rem;
+    color: #29243D;
+    position: relative;
+    z-index: 10;
+    /* display: none; */
+}
+.banner_white{
+    font-size: .3rem;
+    text-shadow:0px 2px 1px rgba(70, 65, 65, 0.45);
+    font-family: 'farrigon';
+    color: #fff;
+    letter-spacing: .1rem;
+}
+/* tab */
+.tab{
+    padding-bottom: 3rem;
+}
+.tab_list{
+    display: flex;
+    display: -webkit-flex;
+    width: 100vw;
+    height: 1rem;
+    font-size: .28rem;
+    padding: 0 .14rem;
+    background: #fff;
+    box-shadow:0px 1px 2px 0px rgba(0,0,0,0.1);
+    line-height: 1rem;
+    text-align: center;
+    box-sizing: border-box;
+    /* position: fixed; */
+    z-index: 10;
+}
+.tab_list_a{
+    position: fixed;
+    z-index: 10;
+    top: 1.12rem;
+}
+
+.tab_list li{
+    flex:1;
+    -webkit-flex:1;
+}
+.tab_list li a{
+    color: #9490A2;
+    position: relative;
+    height:1rem;
+    display: inline-block;
+}
+
+.tab_list li .active{
+    color: #29243D;
+    font-weight: 600;
+}
+.tab_list li .active::after{
+    position: absolute;
+    content:'';
+    width: 100%;
+    height: .06rem;
+    background: #F8D66A;
+    left: 0;
+    bottom: 0;
+}
+
+.icon_tou{
+    background: url(../img/tou.png) no-repeat;
+    background-size: 100% 100%;
+}
+.title_s{
+    font-size: .32rem;
+    color: #29243D;
+    margin: .58rem 0 .26rem 0;
+    /* background: lawngreen; */
+}
+.more{
+    font-size: .28rem;
+    width: .88rem;
+    color: #9490A2;
+    float: right;
+    background: url(../img/icon_rightx.png) no-repeat;
+    background-size:.32rem .32rem;
+    background-position: right;
+}
+.person_list{
+    height: 3.24rem;
+    width: 100%;
+    box-shadow:0px 2px 10px 0px rgba(0,0,0,0.1);
+    font-size: .28rem;
+    padding: 0 .4rem;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: .04rem;
+}
+.person_list .sheng_title{
+    line-height: .8rem;
+    border-bottom: 1px solid #F1F0F2;
+}
+.person_list .sheng_title .f14_b{
+    color: #29243D;
+    font-weight: bold;
+}
+.person_list .sheng_title .f_14{
+    color: #9490A2;
+    margin: 0 0 0 .14rem;
+}
+.person_list .sheng_title .sheng_info{
+    font-size: .2rem;
+    color: #29243D;
+    background: #F8D66A;
+    padding:.04rem .1rem;
+}
+.person_list .sheng_con .sheng_li{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content:space-between;
+    margin-top: .24rem;
+}
+.person_list .sheng_con .sheng_li>div{
+    /* flex:1;
+    -webkit-flex:1; */
+    /* background: saddlebrown; */
+}
+.person_list .sheng_con .sheng_li .sheng_right{
+    text-align: right;
+}
+.person_list .sheng_con .sheng_li .sheng_center{
+    text-align: center;
+}
+.person_list .sheng_con .sheng_li  .sheng_top{
+    font-size: .36rem;
+    color: #29243D;
+    font-weight: bold;
+    line-height: .88rem;
+}
+.person_list .sheng_con .sheng_li  .red{
+    color: #EB5F44;
+    font-size: .42rem;
+}
+.person_list .sheng_con .sheng_li .f14{
+    font-size: .32rem;
+    font-weight: normal;
+}
+.person_list .sheng_con .sheng_li .sheng_bottom{
+    font-size: .24rem;
+    color: #9490A2;
+}
+.person_list .sheng_con .sheng_li .sheng_bottom{
+    /* text-indent: .16rem; */
+    text-align: center;
+}
+.person_list .sheng_con .sheng_li .sheng_right .sheng_bottom{
+    /* margin-right: .24rem; */
+}
+.person_list .sheng_con .sheng_b{
+    margin-top: .34rem;
+    text-align: center;
+    font-size: .2rem;
+    color: #9490A2;
+    position: relative;
+}
+.person_list .sheng_con .sheng_b .zzz{
+    position: absolute;
+    z-index: 2;
+    background: #fff;
+    padding: 0 .16rem;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: .32rem;
+    top: 0;
+    white-space: nowrap;
+
+}
+.person_list .sheng_con .sheng_b::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: #F1F0F2;
+    left: 0;
+    top: .16rem;
+}
+
+
+
+
+.bao_list img{
+    width: 100%;
+    height: 100%;
+}
+.icon_bao{
+    background: url(../img/bao.png) no-repeat;
+    background-size: 100% 100%;
+}
+.icon_child{
+    background: url(../img/zi.png);
+    background-size: 100% 100%;
+}
+.child_list{
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap:wrap;
+    justify-content: space-between;
+    -webkit-justify-content:space-between;
+}
+.child_list a{
+    width: 3.24rem;
+    height: 1.6rem;
+    display: block;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+.child_list a img{
+    width: 100%;
+    height: 100%;
+}
+.icon_sea{
+    background: url(../img/hai.png);
+    background-size: 100% 100%;
+}
+.sea_list a{
+    display: block;
+}
+.sea_list .sea_img{
+    width: 100%;
+    height: 100%;
+}
+.sea_list .f_14{
+    font-size: .28rem;
+    color: #29243D;
+    line-height: .32rem;
+    margin-bottom: .3rem;
+}
+/* window */
+.guan{
+position: fixed;
+bottom: 1.56rem;
+    width:7.1rem;
+    height: 1.32rem;
+    background: url(../img/login.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 0 .2rem;
+    z-index: 10;
+}
+.f24{
+    font-size: .24rem;
+    color: #29243D;
+}
+.f24grey{
+    font-size: .24rem;
+    color: #9490A2;
+}
+.dixian{
+    padding: .5rem .4rem;
+    box-sizing: border-box;
+}
+.dixian img{
+    width: 100%;
+    display: block;
+}
