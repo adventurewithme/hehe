@@ -23,22 +23,25 @@ $(function(){
         //     })
         // }
         // $('#p').text(-top+'a'+ -$('.logo').innerHeight())
-        if (-top > 0 && -top < $('.logo').innerHeight()){
-            $('.logo').css({
-                "background": "rgba(41,36,61,.6)",
-            });
-        } else if (-top > $('.logo').innerHeight()){
-            $('.logo').css({
-                "background": "rgba(41,36,61,1)",
-            });
-        }
-        if (top == 0) {
+
+
+        // if (-top > 0 && -top < $('.logo').innerHeight()){
+        //     $('.logo').css({
+        //         "background": "rgba(41,36,61,.6)",
+        //     });
+        // } else if (-top > $('.logo').innerHeight()){
+        //     $('.logo').css({
+        //         "background": "rgba(41,36,61,1)",
+        //     });
+        // }
+        var tops = Math.abs(top);
+        if (tops == 0) {
             $('.logo').css({
                 "background": ""
             });
-        } else if (top > 0) {
+        } else if (tops > 0) {
             $('.logo').css({
-                "background": "rgba(41,36,61,"+top*0.01+")",
+                "background": "rgba(41,36,61,"+tops*0.008+")",
             });
         }
         if(top>0&&top<banner_h){

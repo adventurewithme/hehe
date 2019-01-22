@@ -7,6 +7,10 @@ $(function () {
     }else{
         phone();
     }
+    // 设置body高度
+    var body_h=$(window).height();
+    console.log(body_h)
+    $('.wide').css({'height':body_h})
     // 获取手机号码
     function phone(){
         $.ajax({

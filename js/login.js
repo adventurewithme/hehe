@@ -8,6 +8,10 @@ $(function () {
 			console.log(res)
 		}
 	});
+	// 设置body高度
+	var body_h=$(window).height();
+	console.log(body_h);
+	$('.container').css({'height':body_h})
 	// 手机号码正则验证
 	$('#phone').on('input', function (number) {
 		var values = number.target.value;

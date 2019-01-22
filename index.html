@@ -10,23 +10,23 @@
 	<link rel="stylesheet" href="./css/swiper.min.css">
 	<script src="./js/jquery-2.1.4.js"></script>
 	<script src="./js/rem.js"></script>
-	<title>首页</title>
+	<title>新富会</title>
 </head>
 
 <body>
 	<div class="wide">
 		<!-- banner部分 -->
 		<div class="swiper-container">
-			<div class="swiper-wrapper">
+			<div class="swiper-wrapper banner">
 				<div class="swiper-slide">
+					<img src="./img/banner1.png" alt="">
+				</div>
+				<!-- <div class="swiper-slide">
 					<img src="./img/banner1.png" alt="">
 				</div>
 				<div class="swiper-slide">
 					<img src="./img/banner1.png" alt="">
-				</div>
-				<div class="swiper-slide">
-					<img src="./img/banner1.png" alt="">
-				</div>
+				</div> -->
 			</div>
 			<div class="swiper-pagination"></div>
 			<div class="banner_bg"></div>
@@ -150,23 +150,30 @@
 	<script src="js/common.js"></script>
 	<script src="js/shouye.js"></script>
 	<script type="text/javascript">
+	$(function(){
+
 		// 首页banner图轮播
-		var mySwiper = new Swiper('.swiper-container', {
-			loop: true, //循环播放
-			// 设置分页
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
-			},
-			// 自动播放
-			autoplay: false,
-		})
+		var banner_length =$('.banner .swiper-slide').length;
+		console.log(banner_length)
+		if(banner_length>1){
+			var mySwiper = new Swiper('.swiper-container', {
+				loop: true, //循环播放
+				// 设置分页
+				pagination: {
+					el: '.swiper-pagination',
+					clickable: true,
+				},
+				// 自动播放
+				autoplay: false,
+			})
+		}
 		// 案例介绍
 		var mySwiper = new Swiper('.swiper-container1', {
 			spaceBetween: 20,
 			slidesPerView: 'auto',
 		})
 
+	})
 	</script>
 </body>
 
